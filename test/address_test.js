@@ -20,6 +20,6 @@ describe('Address', function () {
 
     it('Deve retornar os dados do CEP com formtato unicode no console informando o CEP', async function () {
         var res = await api.getAddressByCepUnicode(valid_cep)
-         assert.equal(res.data.cep, valid_cep)
-     });
+        assert.equal(res.data.cep, valid_cep)
+    });
 });
