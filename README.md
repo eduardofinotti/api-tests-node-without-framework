@@ -56,10 +56,30 @@ module.exports = {
 
 ## Running Tests
 
-To run tests, run the following command
+**To run all tests, run the following command.**
 
 ```bash
   npm run test
+```
+
+**To run a especific test.**
+
+ Just send the '-g' with a partial text of the functionality (describe) or of the scenario itself (it).
+
+```bash
+  npx mocha -g 'Address'
+```
+
+**To generate a REPORT.**
+
+```bash
+  npx mocha --reporter mochawesome                                         
+```
+
+or 
+
+```bash
+  npx mocha --reporter mochawesome -g 'Address'         
 ```
 
 
