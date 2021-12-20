@@ -8,5 +8,8 @@ module.exports = {
     async getAddressByAddress(address) {
         return await axios.get(`https://viacep.com.br/ws/${address}/json/`)
     },
+    async getAddressByCepUnicode(cep) {
+        return await axios.get(`https://viacep.com.br/ws/${cep}/json/unicode/`)
+    },
 
 }

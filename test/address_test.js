@@ -17,4 +17,14 @@ describe('Address', function () {
             assert.typeOf(element.cep, 'string')
         });
     });
+
+    it('Deve retornar os dados do CEP com formtato unicode no console informando o CEP', async function () {
+        var cep = '01001-000'
+        var res = await api.getAddressByCepUnicode(cep)
+
+         console.log(res)
+         assert.equal(res.data.cep, cep)
+    
+       });
+
 });
